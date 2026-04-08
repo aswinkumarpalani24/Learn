@@ -1,0 +1,2 @@
+SELECT *, ROW_NUMBER() OVER(PARTITION BY region ORDER BY amount DESC) AS rn 
+FROM orders;
